@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* body는 선택자, background-color는 속성 */
+body {
+  background-color: white;
+  /* color: #333; */
+  font-size: medium;
+  line-height: 1.5;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  /* background-color: yellow; */
+  padding: 0 14px;
+}
+
+.main {
+  color: black;
+  line-height: 2.5;
+}
+
+.navbar {
+  background-color: #94b0da;
+  color: white;
+  height: 60px;
+}
+
+.navbar .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar .logo {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.navbar a {
+  color: #3e5b9d;
+  text-decoration: none;
+}
+
+.nav a {
+  color: #3e5b9d;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  border-bottom: 3px #3e5b9d solid;
+  /* color: #aaa; */
+}
+
+button {
+  background-color: #00120b;
+  color: #31e981;
+  /* border: none; */
+  padding: 5px 10px;
+  margin: 5px 10px;
+  font-size: large;
+  font-weight: bold;
+  border-width: 0;
+  border-radius: 5px;
+}
+
+button:hover {
+  color: #00120b;
+  background-color: #31e981;
+}
+
+.profile {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.timetable {
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 600px;
+}
+
+.timetable th,
+.timetable td {
+  line-height: 1.5;
+  border: 2px solid gray;
+  height: 80px;
+  border-collapse: collapse;
+}
+
+.timetable td {
+  color: white;
+  vertical-align: top;
+  padding: 3px;
+}
+
+.timetable thead th {
+  height: 20px;
+}
+
+.timetable .cell-subject {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.timetable .subject-oop {
+  background-color: rgb(240, 134, 118);
+}
+
+.timetable .subject-network {
+  background-color: rgb(125, 209, 193);
+}
+
+.timetable .subject-web {
+  background-color: rgb(236, 195, 105);
+}
+
+.timetable .subject-dataStruc {
+  background-color: rgb(167, 202, 112);
+}
+
+.timetable .subject-vision {
+  background-color: rgb(122, 165, 233);
+}
+
+.timetable .subject-title {
+  font-weight: bold;
+}
+
+.timetable .subject-room {
+  font-size: small;
+}
+
+.mediaPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-regi-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.user-regi-table th,
+.user-regi-table td {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  font-weight: normal;
+}
+
+.user-regi-table th {
+  background-color: rgb(231, 231, 231);
+  border-right: 1px solid gray;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.user-regi-table td {
+  padding: 5px;
+}
+
+.user-regi-table input {
+  padding: 5px 10px;
+  margin: 5px 5px;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.user-regi-table select {
+  padding: 5px 5px;
+  margin: 5px 5px;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+
+.submit {
+  width: 100%;
+  background-color: #00120b;
+  color: #31e981;
+  /* border: none; */
+  padding: 5px 10px;
+  margin: 5px 10px;
+  font-size: large;
+  font-weight: bold;
+  border-width: 0;
+  border-radius: 5px;
+}
+
+.submit:hover {
+  color: #00120b;
+  background-color: #31e981;
+}
+
+.input-table-wrap {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}

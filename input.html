@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML실습 | Input</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 메뉴 -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo"><a href="/">HTML실습</a></div>
+        <ul class="nav">
+          <li><a href="/">Table</a></li>
+          <li><a href="/media.html">Media</a></li>
+          <li><a href="/input.html">Input</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 메인 섹션 -->
+    <section class="main">
+      <div class="container">
+        <div style="width: 600px; margin: 0 auto">
+          <form action="">
+            <fieldset style="border: none">
+              <div class="input-table-wrap">
+                <legend><h2>사용자 등록</h2></legend>
+                <table class="user-regi-table">
+                  <colgroup>
+                    <col style="width: 25%" />
+                  </colgroup>
+                  <tr>
+                    <th><label for="id">아이디</label></th>
+                    <td><input type="text" id="id" name="id" required /></td>
+                  </tr>
+                  <tr>
+                    <th><label for="pw">비밀번호</label></th>
+                    <td><input type="text" id="pw" name="pw" required /></td>
+                  </tr>
+                  <tr>
+                    <th><label for="pw2">비밀번호 확인</label></th>
+                    <td><input type="text" id="pw2" name="pw2" required /></td>
+                  </tr>
+                  <tr>
+                    <th><label for="name">이름</label></th>
+                    <td>
+                      <input type="text" id="name" name="name" required />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><label for="mail">이메일</label></th>
+                    <td>
+                      <input
+                        type="email"
+                        id="mail"
+                        name="mail"
+                        size="30"
+                        required
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th><label for="phone1">휴대전화</label></th>
+                    <td>
+                      <select name="phone1" required>
+                        <option value="">선택</option>
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="016">016</option>
+                        <option value="017">017</option>
+                        <option value="018">018</option>
+                        <option value="019">019</option>
+                      </select>
+                      <span>-</span>
+                      <input
+                        type="text"
+                        inputmode="numeric"
+                        id="phone2"
+                        name="phone2"
+                        maxlength="4"
+                        size="1"
+                        required
+                      />
+                      <span>-</span>
+                      <input
+                        type="text"
+                        inputmode="numeric"
+                        id="phone3"
+                        name="phone3"
+                        maxlength="4"
+                        size="1"
+                        required
+                      />
+                    </td>
+                  </tr>
+                </table>
+                <input type="submit" value="작성완료" class="submit" />
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML실습 | Media</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 메뉴 -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo"><a href="/">HTML실습</a></div>
+        <ul class="nav">
+          <li><a href="/">Table</a></li>
+          <li><a href="/media.html">Media</a></li>
+          <li><a href="/input.html">Input</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 메인 섹션 -->
+    <section class="main">
+      <div class="container mediaPage">
+        <img src="media/picture.jpg" width="100%" />
+
+        <br />
+        <div class="profile">
+          <audio src="media/Waltz of the Flowers.mp3" controls></audio>
+          <span>Waltz of the Flowers - Tchaikovsky</span>
+        </div>
+        <br />
+
+        <video
+          src="media/timelapse.mp4"
+          controls
+          width="80%"
+          autoplay
+          muted
+        ></video>
+        <div style="align-items: normal; font-size: xx-small">
+          <p>
+            https://kr.freepik.com/free-photo/quiet-rural-trail-panorama_26743101.htm#fromView=search&page=1&position=45&uuid=d3dba8d4-475b-44a6-99c3-7d1c8c59f872&query=%ED%92%8D%EA%B2%BD
+          </p>
+          <p>https://youtu.be/PamkR_ACPNw?si=dXWUCVCQGSjNNT03</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>

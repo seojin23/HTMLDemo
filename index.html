@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML실습 | Table</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 메뉴 -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo"><a href="/">HTML실습</a></div>
+        <ul class="nav">
+          <li><a href="/">Table</a></li>
+          <li><a href="/media.html">Media</a></li>
+          <li><a href="/input.html">Input</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- 메인 섹션 -->
+    <section class="main">
+      <div class="container">
+        <h1>개인강의시간표</h1>
+        <div class="profile">
+          <h3>정보보호학전공 한서진</h3>
+          <a href="https://github.com/seojin23" target="_blank">
+            <img src="media/github.png" height="30px" style="display: flex" />
+          </a>
+        </div>
+
+        <table class="timetable">
+          <colgroup>
+            <col style="width: 45px" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th></th>
+              <th>월</th>
+              <th>화</th>
+              <th>수</th>
+              <th>목</th>
+              <th>금</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>1교시</th>
+              <td rowspan="2" class="subject-oop">
+                <div class="cell-subject">
+                  <div class="subject-title">객체지향프로그래밍</div>
+                  <div class="subject-room">C6-0815</div>
+                </div>
+              </td>
+              <td rowspan="2" class="subject-network">
+                <div class="cell-subject">
+                  <div class="subject-title">컴퓨터네트워크</div>
+                  <div class="subject-room">C6-0833</div>
+                </div>
+              </td>
+              <td rowspan="2" class="subject-web">
+                <div class="cell-subject">
+                  <div class="subject-title">웹프로그래밍</div>
+                  <div class="subject-room">C6-0833</div>
+                </div>
+              </td>
+              <td rowspan="2" class="subject-dataStruc">
+                <div class="cell-subject">
+                  <div class="subject-title">보안자료구조</div>
+                  <div class="subject-room">C6-0832</div>
+                </div>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>2교시</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>3교시</th>
+              <td rowspan="2" class="subject-web">
+                <div class="cell-subject">
+                  <div class="subject-title">웹프로그래밍</div>
+                  <div class="subject-room">C6-0833</div>
+                </div>
+              </td>
+              <td rowspan="2" class="subject-oop">
+                <div class="cell-subject">
+                  <div class="subject-title">객체지향프로그래밍</div>
+                  <div class="subject-room">C6-0815</div>
+                </div>
+              </td>
+              <td class="subject-vision">
+                <div class="cell-subject">
+                  <div class="subject-title">자기탐색과성장비전</div>
+                  <div class="subject-room">C6-0434</div>
+                </div>
+              </td>
+              <td rowspan="2" class="subject-network">
+                <div class="cell-subject">
+                  <div class="subject-title">컴퓨터네트워크</div>
+                  <div class="subject-room">C6-0833</div>
+                </div>
+              </td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>4교시</th>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>5교시</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>6교시</th>
+              <td rowspan="2" class="subject-dataStruc">
+                <div class="cell-subject">
+                  <div class="subject-title">보안자료구조</div>
+                  <div class="subject-room">C6-0831</div>
+                </div>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th>7교시</th>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </body>
+</html>
